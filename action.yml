@@ -1,5 +1,8 @@
 # action.yml
 name: 'Semantic Version Comparator'
+branding:
+  icon: 'check'
+  color: 'green'
 description: 'Compare and validate two semver strings'
 inputs:
   head:
