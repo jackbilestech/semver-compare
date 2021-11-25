@@ -1,0 +1,22 @@
+# action.yml
+name: 'Semantic Version Comparator'
+description: 'Compare and validate two semver strings'
+inputs:
+  head:
+    description: 'The current value'
+    required: true
+  base:
+    description: 'The value that `head` is compared to'
+    required: true
+  operator:
+    description: 'The compartor symbol to use'
+    required: false
+    default: '>'
+  
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.head }}
+    - ${{ inputs.base }}
+    - ${{ inputs.operator }}
