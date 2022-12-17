@@ -37,7 +37,7 @@ No Outputs
 ## Example usage
 
 ```yaml
-- uses: jackbilestech/semver-compare@1.0.0
+- uses: jackbilestech/semver-compare@1.0.4
   with:
     head: '2.0.0'
     base: '1.0.0'
